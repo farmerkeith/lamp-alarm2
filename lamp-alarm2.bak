@@ -1,0 +1,532 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lamp_v2-cache
+LIBS:buck_1a
+LIBS:lamp-alarm2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4900 1700 700  800 
+U 59CC7D7A
+F0 "driver" 60
+F1 "driver.sch" 60
+F2 "V+" I L 4900 2000 60 
+F3 "GND" I L 4900 2150 60 
+F4 "DIM" I L 4900 2300 60 
+F5 "LED+" I R 5600 2000 60 
+F6 "LED-" I R 5600 2150 60 
+$EndSheet
+$Sheet
+S 6050 1700 650  800 
+U 59CC9EA0
+F0 "LED" 60
+F1 "LED.sch" 60
+F2 "LED+" I L 6050 2000 60 
+F3 "LED-" I L 6050 2150 60 
+F4 "HEAT" O R 6700 2000 60 
+$EndSheet
+$Sheet
+S 950  1800 850  2850
+U 59CCFEAA
+F0 "Sheet59CCFEA9" 60
+F1 "MCU.sch" 60
+F2 "SCK" O R 1800 1900 60 
+F3 "LATCH" O R 1800 2000 60 
+F4 "SER_OUT" O R 1800 2100 60 
+F5 "VCC" O R 1800 2200 60 
+F6 "BTN" O R 1800 2400 60 
+F7 "GND" O R 1800 2300 60 
+F8 "5V_IN" I R 1800 4500 60 
+F9 "GND_IN" I R 1800 4400 60 
+F10 "PWM0" O R 1800 2900 60 
+F11 "PWM1" O R 1800 3000 60 
+F12 "PWM2" O R 1800 3100 60 
+F13 "PWM3" O R 1800 3200 60 
+F14 "PWM4" O R 1800 3300 60 
+$EndSheet
+$Sheet
+S 2450 4250 800  1350
+U 59CFA0CD
+F0 "Power" 60
+F1 "Power.sch" 60
+F2 "5V_OUT" O L 2450 4500 60 
+F3 "GND_OUT" O L 2450 4400 60 
+F4 "V+" O R 3250 4400 60 
+$EndSheet
+Wire Wire Line
+	5600 2000 6050 2000
+Wire Wire Line
+	5600 2150 6050 2150
+Wire Wire Line
+	2450 4400 1800 4400
+Wire Wire Line
+	2450 4500 1800 4500
+Wire Wire Line
+	3250 4400 3750 4400
+Wire Wire Line
+	4900 2000 4550 2000
+Wire Wire Line
+	4900 2150 4550 2150
+Wire Wire Line
+	4900 2300 4550 2300
+Text Label 4350 4450 0    60   ~ 0
+V+
+Text Label 4350 4650 0    60   ~ 0
+HGND
+Text Label 4550 2000 0    60   ~ 0
+V+
+Text Label 4550 2150 0    60   ~ 0
+HGND
+Text Label 4550 2300 0    60   ~ 0
+PWM0
+Wire Wire Line
+	1800 2900 2250 2900
+Wire Wire Line
+	1800 3000 2250 3000
+Wire Wire Line
+	1800 3100 2250 3100
+Wire Wire Line
+	1800 3200 2250 3200
+Wire Wire Line
+	1800 3300 2250 3300
+Text Label 4250 3400 0    60   ~ 0
+PWM0
+Text Label 4250 3600 0    60   ~ 0
+PWM1
+Text Label 4250 3800 0    60   ~ 0
+PWM2
+Text Label 4250 4000 0    60   ~ 0
+PWM3
+Text Label 4250 4200 0    60   ~ 0
+PWM4
+$Sheet
+S 3050 1650 800  1600
+U 59D04DC5
+F0 "UI" 60
+F1 "UI.sch" 60
+F2 "SER_OUT" O R 3850 2950 60 
+F3 "SER_IN" I L 3050 1900 60 
+F4 "LATCH" I L 3050 2000 60 
+F5 "CLOCK" I L 3050 2100 60 
+F6 "BTN" O L 3050 2400 60 
+F7 "GND" I L 3050 2650 60 
+F8 "VCC" I L 3050 2750 60 
+$EndSheet
+NoConn ~ 3850 2950
+Wire Wire Line
+	1800 2100 2550 2100
+Wire Wire Line
+	2550 2100 2550 1900
+Wire Wire Line
+	2550 1900 3050 1900
+Wire Wire Line
+	1800 2000 3050 2000
+Wire Wire Line
+	1800 1900 2200 1900
+Wire Wire Line
+	2200 1900 2200 2150
+Wire Wire Line
+	2200 2150 2600 2150
+Wire Wire Line
+	2600 2150 2600 2100
+Wire Wire Line
+	2600 2100 3050 2100
+Wire Wire Line
+	1800 2400 3050 2400
+$Comp
+L TEST_1P PWM1
+U 1 1 59D2EC74
+P 2250 2900
+F 0 "PWM1" H 2250 3170 50  0000 C CNN
+F 1 "TEST_1P" H 2250 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2450 2900 50  0001 C CNN
+F 3 "" H 2450 2900 50  0001 C CNN
+	1    2250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P PWM2
+U 1 1 59D2ED43
+P 2250 3000
+F 0 "PWM2" H 2250 3270 50  0000 C CNN
+F 1 "TEST_1P" H 2250 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2450 3000 50  0001 C CNN
+F 3 "" H 2450 3000 50  0001 C CNN
+	1    2250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P PWM3
+U 1 1 59D2EE1C
+P 2250 3100
+F 0 "PWM3" H 2250 3370 50  0000 C CNN
+F 1 "TEST_1P" H 2250 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2450 3100 50  0001 C CNN
+F 3 "" H 2450 3100 50  0001 C CNN
+	1    2250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P PWM4
+U 1 1 59D2EEE1
+P 2250 3200
+F 0 "PWM4" H 2250 3470 50  0000 C CNN
+F 1 "TEST_1P" H 2250 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2450 3200 50  0001 C CNN
+F 3 "" H 2450 3200 50  0001 C CNN
+	1    2250 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P PWM5
+U 1 1 59D2EFA8
+P 2250 3300
+F 0 "PWM5" H 2250 3570 50  0000 C CNN
+F 1 "TEST_1P" H 2250 3500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P DIM1
+U 1 1 59D2F3AF
+P 4000 3400
+F 0 "DIM1" H 4000 3670 50  0000 C CNN
+F 1 "TEST_1P" H 4000 3600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4200 3400 50  0001 C CNN
+F 3 "" H 4200 3400 50  0001 C CNN
+	1    4000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P DIM2
+U 1 1 59D2F47C
+P 4000 3600
+F 0 "DIM2" H 4000 3870 50  0000 C CNN
+F 1 "TEST_1P" H 4000 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4200 3600 50  0001 C CNN
+F 3 "" H 4200 3600 50  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P DIM3
+U 1 1 59D2F555
+P 4000 3800
+F 0 "DIM3" H 4000 4070 50  0000 C CNN
+F 1 "TEST_1P" H 4000 4000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4200 3800 50  0001 C CNN
+F 3 "" H 4200 3800 50  0001 C CNN
+	1    4000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P DIM4
+U 1 1 59D2F628
+P 4000 4000
+F 0 "DIM4" H 4000 4270 50  0000 C CNN
+F 1 "TEST_1P" H 4000 4200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4200 4000 50  0001 C CNN
+F 3 "" H 4200 4000 50  0001 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P DIM5
+U 1 1 59D2F6FB
+P 4000 4200
+F 0 "DIM5" H 4000 4470 50  0000 C CNN
+F 1 "TEST_1P" H 4000 4400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4200 4200 50  0001 C CNN
+F 3 "" H 4200 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3400 4250 3400
+Wire Wire Line
+	4000 3600 4250 3600
+Wire Wire Line
+	4000 3800 4250 3800
+Wire Wire Line
+	4000 4000 4250 4000
+Wire Wire Line
+	4000 4200 4250 4200
+$Comp
+L TEST_1P 12V+1
+U 1 1 59D30DE7
+P 3750 4400
+F 0 "12V+1" H 3750 4670 50  0000 C CNN
+F 1 "TEST_1P" H 3750 4600 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3950 4400 50  0001 C CNN
+F 3 "" H 3950 4400 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P GND1
+U 1 1 59D30F22
+P 3750 4500
+F 0 "GND1" H 3750 4770 50  0000 C CNN
+F 1 "TEST_1P" H 3750 4700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 3950 4500 50  0001 C CNN
+F 3 "" H 3950 4500 50  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P 12V+2
+U 1 1 59D31C5A
+P 4100 4450
+F 0 "12V+2" H 4100 4720 50  0000 C CNN
+F 1 "TEST_1P" H 4100 4650 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4300 4450 50  0001 C CNN
+F 3 "" H 4300 4450 50  0001 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P GND2
+U 1 1 59D31D9B
+P 4100 4650
+F 0 "GND2" H 4100 4920 50  0000 C CNN
+F 1 "TEST_1P" H 4100 4850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4300 4650 50  0001 C CNN
+F 3 "" H 4300 4650 50  0001 C CNN
+	1    4100 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4450 4350 4450
+Wire Wire Line
+	4100 4650 4350 4650
+$Sheet
+S 6050 4300 700  800 
+U 59D38E9A
+F0 "sheet59D38E92" 60
+F1 "driver.sch" 60
+F2 "V+" I L 6050 4600 60 
+F3 "GND" I L 6050 4750 60 
+F4 "DIM" I L 6050 4900 60 
+F5 "LED+" I R 6750 4600 60 
+F6 "LED-" I R 6750 4750 60 
+$EndSheet
+$Sheet
+S 7200 4300 650  800 
+U 59D38EAD
+F0 "sheet59D38E93" 60
+F1 "LED.sch" 60
+F2 "LED+" I L 7200 4600 60 
+F3 "LED-" I L 7200 4750 60 
+F4 "HEAT" O R 7850 4600 60 
+$EndSheet
+Wire Wire Line
+	6750 4600 7200 4600
+Wire Wire Line
+	6750 4750 7200 4750
+Wire Wire Line
+	6050 4600 5700 4600
+Wire Wire Line
+	6050 4750 5700 4750
+Wire Wire Line
+	6050 4900 5700 4900
+Text Label 5700 4600 0    60   ~ 0
+V+
+Text Label 5700 4750 0    60   ~ 0
+HGND
+Text Label 5700 4900 0    60   ~ 0
+PWM2
+$Sheet
+S 6050 2950 700  800 
+U 59D39A28
+F0 "sheet59D39A20" 60
+F1 "driver.sch" 60
+F2 "V+" I L 6050 3250 60 
+F3 "GND" I L 6050 3400 60 
+F4 "DIM" I L 6050 3550 60 
+F5 "LED+" I R 6750 3250 60 
+F6 "LED-" I R 6750 3400 60 
+$EndSheet
+$Sheet
+S 7200 2950 650  800 
+U 59D39A3B
+F0 "sheet59D39A21" 60
+F1 "LED.sch" 60
+F2 "LED+" I L 7200 3250 60 
+F3 "LED-" I L 7200 3400 60 
+F4 "HEAT" O R 7850 3250 60 
+$EndSheet
+Wire Wire Line
+	6750 3250 7200 3250
+Wire Wire Line
+	6750 3400 7200 3400
+Wire Wire Line
+	6050 3250 5700 3250
+Wire Wire Line
+	6050 3400 5700 3400
+Wire Wire Line
+	6050 3550 5700 3550
+Text Label 5700 3250 0    60   ~ 0
+V+
+Text Label 5700 3400 0    60   ~ 0
+HGND
+Text Label 5700 3550 0    60   ~ 0
+PWM1
+$Sheet
+S 6050 5500 700  800 
+U 59D3A6F5
+F0 "sheet59D3A6ED" 60
+F1 "driver.sch" 60
+F2 "V+" I L 6050 5800 60 
+F3 "GND" I L 6050 5950 60 
+F4 "DIM" I L 6050 6100 60 
+F5 "LED+" I R 6750 5800 60 
+F6 "LED-" I R 6750 5950 60 
+$EndSheet
+$Sheet
+S 7200 5500 650  800 
+U 59D3A708
+F0 "sheet59D3A6EE" 60
+F1 "LED.sch" 60
+F2 "LED+" I L 7200 5800 60 
+F3 "LED-" I L 7200 5950 60 
+F4 "HEAT" O R 7850 5800 60 
+$EndSheet
+Wire Wire Line
+	6750 5800 7200 5800
+Wire Wire Line
+	6750 5950 7200 5950
+Wire Wire Line
+	6050 5800 5700 5800
+Wire Wire Line
+	6050 5950 5700 5950
+Wire Wire Line
+	6050 6100 5700 6100
+Text Label 5700 5800 0    60   ~ 0
+V+
+Text Label 5700 5950 0    60   ~ 0
+HGND
+Text Label 5700 6100 0    60   ~ 0
+PWM3
+$Sheet
+S 8050 1700 700  800 
+U 59D3AE53
+F0 "sheet59D3AE4B" 60
+F1 "driver.sch" 60
+F2 "V+" I L 8050 2000 60 
+F3 "GND" I L 8050 2150 60 
+F4 "DIM" I L 8050 2300 60 
+F5 "LED+" I R 8750 2000 60 
+F6 "LED-" I R 8750 2150 60 
+$EndSheet
+$Sheet
+S 9200 1700 650  800 
+U 59D3AE66
+F0 "sheet59D3AE4C" 60
+F1 "LED.sch" 60
+F2 "LED+" I L 9200 2000 60 
+F3 "LED-" I L 9200 2150 60 
+F4 "HEAT" O R 9850 2000 60 
+$EndSheet
+Wire Wire Line
+	8750 2000 9200 2000
+Wire Wire Line
+	8750 2150 9200 2150
+Wire Wire Line
+	8050 2000 7700 2000
+Wire Wire Line
+	8050 2150 7700 2150
+Wire Wire Line
+	8050 2300 7700 2300
+Text Label 7700 2000 0    60   ~ 0
+V+
+Text Label 7700 2150 0    60   ~ 0
+HGND
+Text Label 7700 2300 0    60   ~ 0
+PWM4
+Wire Wire Line
+	3050 2650 2550 2650
+Wire Wire Line
+	3050 2750 2650 2750
+Wire Wire Line
+	6700 2000 7000 2000
+Text Label 7000 2000 0    60   ~ 0
+HEAT
+Wire Wire Line
+	9850 2000 10150 2000
+Text Label 10150 2000 0    60   ~ 0
+HEAT
+Wire Wire Line
+	7850 3250 8150 3250
+Text Label 8150 3250 0    60   ~ 0
+HEAT
+Wire Wire Line
+	7850 4600 8150 4600
+Text Label 8150 4600 0    60   ~ 0
+HEAT
+Wire Wire Line
+	7850 5800 8150 5800
+Text Label 8150 5800 0    60   ~ 0
+HEAT
+Wire Wire Line
+	2650 2750 2650 2200
+Wire Wire Line
+	2650 2200 1800 2200
+Wire Wire Line
+	2550 2650 2550 2300
+Wire Wire Line
+	2550 2300 1800 2300
+Wire Wire Line
+	2150 3950 3450 3950
+Wire Wire Line
+	3450 3950 3450 4500
+Wire Wire Line
+	3450 4500 3750 4500
+Wire Wire Line
+	2150 3950 2150 4400
+Connection ~ 2150 4400
+$EndSCHEMATC

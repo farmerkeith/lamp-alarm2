@@ -1,0 +1,610 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lamp_v2-cache
+LIBS:buck_1a
+LIBS:lamp-alarm2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 5200 4350
+NoConn ~ 5200 4250
+NoConn ~ 5200 4150
+NoConn ~ 5200 4050
+$Comp
+L R RS8
+U 1 1 59D05437
+P 6250 3950
+F 0 "RS8" V 6330 3950 50  0000 C CNN
+F 1 "R" V 6250 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 3950 50  0000 C CNN
+F 3 "" H 6250 3950 50  0000 C CNN
+	1    6250 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS3
+U 1 1 59D05438
+P 6000 3850
+F 0 "RS3" V 6080 3850 50  0000 C CNN
+F 1 "R" V 6000 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 3850 50  0000 C CNN
+F 3 "" H 6000 3850 50  0000 C CNN
+	1    6000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS7
+U 1 1 59D05439
+P 6250 3750
+F 0 "RS7" V 6330 3750 50  0000 C CNN
+F 1 "R" V 6250 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 3750 50  0000 C CNN
+F 3 "" H 6250 3750 50  0000 C CNN
+	1    6250 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS2
+U 1 1 59D0543A
+P 6000 3650
+F 0 "RS2" V 6080 3650 50  0000 C CNN
+F 1 "R" V 6000 3650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 3650 50  0000 C CNN
+F 3 "" H 6000 3650 50  0000 C CNN
+	1    6000 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS6
+U 1 1 59D0543B
+P 6250 3550
+F 0 "RS6" V 6330 3550 50  0000 C CNN
+F 1 "R" V 6250 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 3550 50  0000 C CNN
+F 3 "" H 6250 3550 50  0000 C CNN
+	1    6250 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R RD3
+U 1 1 59D0543C
+P 6000 3450
+F 0 "RD3" V 6080 3450 50  0000 C CNN
+F 1 "R" V 6000 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 3450 50  0000 C CNN
+F 3 "" H 6000 3450 50  0000 C CNN
+	1    6000 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS5
+U 1 1 59D0543D
+P 6250 3350
+F 0 "RS5" V 6330 3350 50  0000 C CNN
+F 1 "R" V 6250 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 3350 50  0000 C CNN
+F 3 "" H 6250 3350 50  0000 C CNN
+	1    6250 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R RD2
+U 1 1 59D0543E
+P 6000 3250
+F 0 "RD2" V 6080 3250 50  0000 C CNN
+F 1 "R" V 6000 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 3250 50  0000 C CNN
+F 3 "" H 6000 3250 50  0000 C CNN
+	1    6000 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R RD4
+U 1 1 59D0543F
+P 6250 3150
+F 0 "RD4" V 6330 3150 50  0000 C CNN
+F 1 "R" V 6250 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 3150 50  0000 C CNN
+F 3 "" H 6250 3150 50  0000 C CNN
+	1    6250 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS1
+U 1 1 59D05440
+P 6000 3050
+F 0 "RS1" V 6080 3050 50  0000 C CNN
+F 1 "R" V 6000 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 3050 50  0000 C CNN
+F 3 "" H 6000 3050 50  0000 C CNN
+	1    6000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R RS4
+U 1 1 59D05441
+P 6250 2950
+F 0 "RS4" V 6330 2950 50  0000 C CNN
+F 1 "R" V 6250 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6180 2950 50  0000 C CNN
+F 3 "" H 6250 2950 50  0000 C CNN
+	1    6250 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L R RD1
+U 1 1 59D05442
+P 6000 2850
+F 0 "RD1" V 6080 2850 50  0000 C CNN
+F 1 "R" V 6000 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5930 2850 50  0000 C CNN
+F 3 "" H 6000 2850 50  0000 C CNN
+	1    6000 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Display_7Seg_Cathode_YY2841AH-33 U5
+U 1 1 59D05443
+P 7150 3550
+F 0 "U5" H 6325 3550 60  0000 C CNN
+F 1 "Display_7Seg_Cathode_YY2841AH-33" H 7000 3700 60  0000 C CNN
+F 2 "smiley-library:7Segment_12pin_1cm_high" H 7125 3550 60  0001 C CNN
+F 3 "" H 7125 3550 60  0001 C CNN
+	1    7150 3550
+	0    1    1    0   
+$EndComp
+$Sheet
+S 4200 2600 1000 2100
+U 59D05444
+F0 "sheet57CBF124" 60
+F1 "file59D05444.sch" 60
+F2 "SER_IN" I L 4200 2900 60 
+F3 "LATCH" I L 4200 3000 60 
+F4 "CLOCK" I L 4200 3100 60 
+F5 "AA" O R 5200 2850 60 
+F6 "AB" O R 5200 2950 60 
+F7 "AC" O R 5200 3050 60 
+F8 "AD" O R 5200 3150 60 
+F9 "AE" O R 5200 3250 60 
+F10 "AF" O R 5200 3350 60 
+F11 "AG" O R 5200 3450 60 
+F12 "AH" O R 5200 3550 60 
+F13 "BA" O R 5200 3650 60 
+F14 "BB" O R 5200 3750 60 
+F15 "BC" O R 5200 3850 60 
+F16 "BD" O R 5200 3950 60 
+F17 "BE" O R 5200 4050 60 
+F18 "BF" O R 5200 4150 60 
+F19 "BG" O R 5200 4250 60 
+F20 "BH" O R 5200 4350 60 
+F21 "SER_OUT" O R 5200 4450 60 
+F22 "GND" I L 4200 3200 60 
+F23 "VCC" I L 4200 3300 60 
+$EndSheet
+Text HLabel 5800 6400 2    60   Output ~ 0
+SER_OUT
+Text HLabel 3550 2900 0    60   Input ~ 0
+SER_IN
+Text HLabel 3550 3000 0    60   Input ~ 0
+LATCH
+Text HLabel 3550 3100 0    60   Input ~ 0
+CLOCK
+$Comp
+L 74HC595 U4
+U 1 1 59D0B3AF
+P 4750 5950
+F 0 "U4" H 4900 6550 50  0000 C CNN
+F 1 "74HC595" H 4750 5350 50  0000 C CNN
+F 2 "smiley-library:SOIC-16_3.9x9.9mm_Pitch1.27mm-narrowerpads" H 4750 5950 50  0001 C CNN
+F 3 "" H 4750 5950 50  0001 C CNN
+	1    4750 5950
+	1    0    0    -1  
+$EndComp
+Text Label 3650 6000 0    60   ~ 0
+LATCH
+Text Label 3700 3000 0    60   ~ 0
+LATCH
+Text Label 3650 5700 0    60   ~ 0
+CLOCK
+Text Label 3700 3100 0    60   ~ 0
+CLOCK
+$Comp
+L R R4K1
+U 1 1 59D0F45F
+P 8250 5500
+F 0 "R4K1" V 8330 5500 50  0000 C CNN
+F 1 "R" V 8250 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8180 5500 50  0001 C CNN
+F 3 "" H 8250 5500 50  0001 C CNN
+	1    8250 5500
+	0    1    1    0   
+$EndComp
+Text HLabel 7450 5350 1    60   Output ~ 0
+BTN
+$Comp
+L D_Schottky_Small D10
+U 1 1 59D13700
+P 5600 5500
+F 0 "D10" H 5550 5580 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5320 5420 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5600 5500 50  0001 C CNN
+F 3 "" V 5600 5500 50  0001 C CNN
+	1    5600 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D14
+U 1 1 59D137CD
+P 5700 5600
+F 0 "D14" H 5650 5680 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5420 5520 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5700 5600 50  0001 C CNN
+F 3 "" V 5700 5600 50  0001 C CNN
+	1    5700 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D11
+U 1 1 59D13880
+P 5600 5700
+F 0 "D11" H 5550 5780 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5320 5620 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5600 5700 50  0001 C CNN
+F 3 "" V 5600 5700 50  0001 C CNN
+	1    5600 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D15
+U 1 1 59D13935
+P 5700 5800
+F 0 "D15" H 5650 5880 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5420 5720 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5700 5800 50  0001 C CNN
+F 3 "" V 5700 5800 50  0001 C CNN
+	1    5700 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D12
+U 1 1 59D139EA
+P 5600 5900
+F 0 "D12" H 5550 5980 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5320 5820 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5600 5900 50  0001 C CNN
+F 3 "" V 5600 5900 50  0001 C CNN
+	1    5600 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D16
+U 1 1 59D13AA9
+P 5700 6000
+F 0 "D16" H 5650 6080 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5420 5920 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5700 6000 50  0001 C CNN
+F 3 "" V 5700 6000 50  0001 C CNN
+	1    5700 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D13
+U 1 1 59D13B64
+P 5600 6100
+F 0 "D13" H 5550 6180 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5320 6020 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5600 6100 50  0001 C CNN
+F 3 "" V 5600 6100 50  0001 C CNN
+	1    5600 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Schottky_Small D17
+U 1 1 59D13C25
+P 5700 6200
+F 0 "D17" H 5650 6280 50  0000 L CNN
+F 1 "D_Schottky_Small" H 5420 6120 50  0000 L CNN
+F 2 "smiley-library:SMA_Standard_noadhesive" V 5700 6200 50  0001 C CNN
+F 3 "" V 5700 6200 50  0001 C CNN
+	1    5700 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW5
+U 1 1 59D1411B
+P 6350 5500
+F 0 "SW5" H 6430 5610 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6710 5440 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6350 5700 50  0000 C CNN
+F 3 "" H 6350 5700 50  0000 C CNN
+	1    6350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW1
+U 1 1 59D14228
+P 6100 5600
+F 0 "SW1" H 6180 5710 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6460 5540 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6100 5800 50  0000 C CNN
+F 3 "" H 6100 5800 50  0000 C CNN
+	1    6100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW6
+U 1 1 59D142F1
+P 6350 5700
+F 0 "SW6" H 6430 5810 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6710 5640 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6350 5900 50  0000 C CNN
+F 3 "" H 6350 5900 50  0000 C CNN
+	1    6350 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW2
+U 1 1 59D143BC
+P 6100 5800
+F 0 "SW2" H 6180 5910 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6460 5740 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6100 6000 50  0000 C CNN
+F 3 "" H 6100 6000 50  0000 C CNN
+	1    6100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW7
+U 1 1 59D1448D
+P 6350 5900
+F 0 "SW7" H 6430 6010 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6710 5840 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6350 6100 50  0000 C CNN
+F 3 "" H 6350 6100 50  0000 C CNN
+	1    6350 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW3
+U 1 1 59D1455C
+P 6100 6000
+F 0 "SW3" H 6180 6110 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6460 5940 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6100 6200 50  0000 C CNN
+F 3 "" H 6100 6200 50  0000 C CNN
+	1    6100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW8
+U 1 1 59D1462F
+P 6350 6100
+F 0 "SW8" H 6430 6210 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6710 6040 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6350 6300 50  0000 C CNN
+F 3 "" H 6350 6300 50  0000 C CNN
+	1    6350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH_SMALL_H SW4
+U 1 1 59D14702
+P 6100 6200
+F 0 "SW4" H 6180 6310 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6460 6140 50  0000 C CNN
+F 2 "smiley-library:tact_switch_6x6" H 6100 6400 50  0000 C CNN
+F 3 "" H 6100 6400 50  0000 C CNN
+	1    6100 6200
+	1    0    0    -1  
+$EndComp
+Text Label 8750 5500 0    60   ~ 0
+GND
+Wire Wire Line
+	6150 2850 6850 2850
+Wire Wire Line
+	6400 3950 6850 3950
+Wire Wire Line
+	6150 3850 6850 3850
+Wire Wire Line
+	6400 3750 6850 3750
+Wire Wire Line
+	6150 3650 6850 3650
+Wire Wire Line
+	6400 3550 6850 3550
+Wire Wire Line
+	6150 3450 6850 3450
+Wire Wire Line
+	6400 3350 6850 3350
+Wire Wire Line
+	6150 3250 6850 3250
+Wire Wire Line
+	6400 3150 6850 3150
+Wire Wire Line
+	6150 3050 6850 3050
+Wire Wire Line
+	6400 2950 6850 2950
+Wire Wire Line
+	5200 3950 6100 3950
+Wire Wire Line
+	5200 3850 5850 3850
+Wire Wire Line
+	5200 3750 6100 3750
+Wire Wire Line
+	5200 3650 5850 3650
+Wire Wire Line
+	5200 3550 6100 3550
+Wire Wire Line
+	5200 3450 5850 3450
+Wire Wire Line
+	5200 3350 6100 3350
+Wire Wire Line
+	5200 3250 5850 3250
+Wire Wire Line
+	5200 3150 6100 3150
+Wire Wire Line
+	5200 3050 5850 3050
+Wire Wire Line
+	5200 2950 6100 2950
+Wire Wire Line
+	5200 2850 5850 2850
+Wire Wire Line
+	4200 3100 3550 3100
+Wire Wire Line
+	4200 3000 3550 3000
+Wire Wire Line
+	4200 2900 3550 2900
+Wire Wire Line
+	5200 4450 6250 4450
+Wire Wire Line
+	5450 6400 5800 6400
+Wire Wire Line
+	6250 4450 6250 5100
+Wire Wire Line
+	6250 5100 3850 5100
+Wire Wire Line
+	3850 5100 3850 5500
+Wire Wire Line
+	3850 5500 4050 5500
+Wire Wire Line
+	4450 5300 4450 5400
+Wire Wire Line
+	3100 5300 4450 5300
+Wire Wire Line
+	3950 5300 3950 5800
+Wire Wire Line
+	3950 5800 4050 5800
+Wire Wire Line
+	4050 6000 3650 6000
+Wire Wire Line
+	4050 5700 3650 5700
+Wire Wire Line
+	4450 6600 4450 6500
+Wire Wire Line
+	3250 6600 4450 6600
+Wire Wire Line
+	4050 6600 4050 6100
+Wire Wire Line
+	6500 5500 8100 5500
+Wire Wire Line
+	7050 6200 7050 5500
+Wire Wire Line
+	6250 5600 7050 5600
+Wire Wire Line
+	6500 5700 7050 5700
+Connection ~ 7050 5600
+Wire Wire Line
+	6250 5800 7050 5800
+Connection ~ 7050 5700
+Wire Wire Line
+	6500 5900 7050 5900
+Connection ~ 7050 5800
+Wire Wire Line
+	6250 6000 7050 6000
+Connection ~ 7050 5900
+Wire Wire Line
+	6500 6100 7050 6100
+Connection ~ 7050 6000
+Wire Wire Line
+	6250 6200 7050 6200
+Connection ~ 7050 6100
+Connection ~ 7050 5500
+Wire Wire Line
+	5450 5500 5500 5500
+Wire Wire Line
+	5700 5500 6200 5500
+Wire Wire Line
+	5450 5600 5600 5600
+Wire Wire Line
+	5450 5700 5500 5700
+Wire Wire Line
+	5450 5800 5600 5800
+Wire Wire Line
+	5450 5900 5500 5900
+Wire Wire Line
+	5450 6000 5600 6000
+Wire Wire Line
+	5450 6100 5500 6100
+Wire Wire Line
+	5450 6200 5600 6200
+Wire Wire Line
+	5800 5600 5950 5600
+Wire Wire Line
+	5700 5700 6200 5700
+Wire Wire Line
+	5800 5800 5950 5800
+Wire Wire Line
+	5700 5900 6200 5900
+Wire Wire Line
+	5800 6000 5950 6000
+Wire Wire Line
+	5800 6200 5950 6200
+Wire Wire Line
+	5700 6100 6200 6100
+Wire Wire Line
+	7450 5500 7450 5350
+Connection ~ 7450 5500
+Wire Wire Line
+	8400 5500 8750 5500
+Connection ~ 4050 6600
+Text HLabel 3250 6600 0    60   Input ~ 0
+GND
+Connection ~ 3950 5300
+Text HLabel 3100 5300 0    60   Input ~ 0
+VCC
+Wire Wire Line
+	4200 3300 3700 3300
+Wire Wire Line
+	3700 3300 3700 5300
+Connection ~ 3700 5300
+Wire Wire Line
+	4200 3200 2400 3200
+Wire Wire Line
+	2400 3200 2400 6350
+Wire Wire Line
+	2400 6350 3400 6350
+Wire Wire Line
+	3400 6350 3400 6600
+Connection ~ 3400 6600
+$EndSCHEMATC
